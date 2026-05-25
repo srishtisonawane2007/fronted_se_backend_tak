@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Operators in JavaScript</title>
+</head>
+<body>
+
+<script>
+
+    // let
+    let age = 20;
+    document.write("let value: " + age + "<br>");
+
+    age = 50;
+    document.write("updated let value: " + age + "<br><br>");
+
+
+
+    // const
+    const PI = 3.14;
+    document.write("const value: " + PI + "<br><br>");
+
+
+
+    // var
+    var num = 20;
+    var num = 30;
+    document.write("var value: " + num + "<br><br>");
+
+
+
+    // Arithmetic Operators
+    const a = 10;
+    const b = 20;
+
+    document.write("Addition: " + (a + b) + "<br>");
+    document.write("Subtraction: " + (a - b) + "<br>");
+
+    const x = 8;
+    const y = 5;
+
+    document.write("Multiplication: " + (x * y) + "<br>");
+    document.write("Division: " + (x / y) + "<br>");
+
+    const c = 10;
+    const d = 3;
+
+    document.write("Modulus: " + (c % d) + "<br><br>");
+
+
+
+    // Assignment Operators
+    let marks = 10;
+
+    marks += 5;
+    document.write("+= Operator: " + marks + "<br>");
+
+    marks -= 2;
+    document.write("-= Operator: " + marks + "<br>");
+
+    marks *= 2;
+    document.write("*= Operator: " + marks + "<br>");
+
+    marks /= 2;
+    document.write("/= Operator: " + marks + "<br>");
+
+    marks %= 3;
+    document.write("%= Operator: " + marks + "<br><br>");
+
+
+
+    // Increment Operators
+    let number1 = 21;
+    let result1 = number1++;
+    document.write("Post Increment Result: " + result1 + "<br>");
+    document.write("Post Increment Updated Value: " + number1 + "<br>");
+
+    let number2 = 21;
+    let result2 = ++number2;
+    document.write("Pre Increment Result: " + result2 + "<br>");
+    document.write("Pre Increment Updated Value: " + number2 + "<br><br>");
+
+
+
+    // Decrement Operators
+    let number3 = 21;
+    let result3 = number3--;
+    document.write("Post Decrement Result: " + result3 + "<br>");
+    document.write("Post Decrement Updated Value: " + number3 + "<br>");
+
+    let number4 = 21;
+    let result4 = --number4;
+    document.write("Pre Decrement Result: " + result4 + "<br>");
+    document.write("Pre Decrement Updated Value: " + number4 + "<br><br>");
+
+
+
+    // Comparison Operators
+    let value1 = 10;
+    let value2 = 10;
+
+    document.write("Equal To (==): " + (value1 == value2) + "<br>");
+    document.write("Strict Equal To (===): " + (value1 === value2) + "<br>");
+
+    let value3 = 10;
+    let value4 = 20;
+
+    document.write("Not Equal To (!=): " + (value3 != value4) + "<br>");
+    document.write("Less Than (<): " + (value3 < value4) + "<br>");
+    document.write("Greater Than (>): " + (value3 > value4) + "<br>");
+    document.write("Less Than Equal To (<=): " + (value3 <= value4) + "<br>");
+    document.write("Greater Than Equal To (>=): " + (value3 >= value4) + "<br><br>");
+
+
+
+    // Logical Operators
+    document.write("Logical AND (&&): " + (true && true) + "<br>");
+    document.write("Logical OR (||): " + (true || false) + "<br>");
+    document.write("Logical NOT (!): " + (!true) + "<br><br>");
+
+
+
+    // Other Operator
+    document.write("typeof Operator: " + typeof age + "<br>");
+
+</script>
+
+</body>
+</html>

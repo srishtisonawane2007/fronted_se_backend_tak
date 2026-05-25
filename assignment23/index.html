@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Nested If and Switch Case</title>
+</head>
+<body>
+
+<script>
+
+    // Task 1 - Grade Checker using Nested If
+
+    const marks = parseInt(prompt("Enter Marks"));
+
+    if (marks >= 50) {
+
+        if (marks >= 90) {
+            document.write("Grade A <br>");
+        } else if (marks >= 75) {
+            document.write("Grade B <br>");
+        } else {
+            document.write("Grade C <br>");
+        }
+
+    } else {
+        document.write("Fail <br>");
+    }
+
+
+
+    // Task 2 - Day Finder using Switch Case
+
+    const day = parseInt(prompt("Enter Number Between 1 to 7"));
+
+    switch (day) {
+
+        case 1:
+            document.write("Monday");
+            break;
+
+        case 2:
+            document.write("Tuesday");
+            break;
+
+        case 3:
+            document.write("Wednesday");
+            break;
+
+        case 4:
+            document.write("Thursday");
+            break;
+
+        case 5:
+            document.write("Friday");
+            break;
+
+        case 6:
+            document.write("Saturday");
+            break;
+
+        case 7:
+            document.write("Sunday");
+            break;
+
+        default:
+            document.write("Invalid Input");
+            break;
+    }
+
+</script>
+
+</body>
+</html>
