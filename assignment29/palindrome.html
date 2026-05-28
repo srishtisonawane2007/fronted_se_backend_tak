@@ -1,0 +1,32 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Prime Number</title>
+</head>
+<body>
+
+<script>
+
+let num = Number(prompt("Enter a number"));
+let prime = true;
+
+for (let i = 2; i < num; i++) {
+
+  if (num % i == 0) {
+    prime = false;
+    break;
+  }
+
+}
+
+if (prime == true && num > 1) {
+  document.write("Prime Number");
+} else {
+  document.write("Not Prime Number");
+}
+
+</script>
+
+</body>
+</html>
