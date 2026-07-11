@@ -1,0 +1,119 @@
+:root {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #1f2937;
+  background: #f8fafc;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background: #f8fafc;
+}
+
+.container {
+  max-width: 1180px;
+  margin: 0 auto;
+  padding: 1rem 1.5rem 2rem;
+}
+
+header {
+  background: #1e40af;
+  color: #ffffff;
+  padding: 1rem 0;
+}
+
+nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  justify-content: center;
+  align-items: center;
+}
+
+nav a {
+  color: #ffffff;
+  text-decoration: none;
+  padding: 0.7rem 1rem;
+  border-radius: 999px;
+  background: rgba(255,255,255,0.08);
+  transition: background 0.2s ease;
+}
+
+nav a:hover {
+  background: rgba(255,255,255,0.16);
+}
+
+.hero {
+  background: #2563eb;
+  color: #fff;
+  padding: 3rem 1.5rem;
+  border-radius: 1.5rem;
+  margin: 1.5rem 0;
+  text-align: center;
+}
+
+.hero h1 {
+  margin: 0 0 0.75rem;
+  font-size: clamp(2rem, 4vw, 3.5rem);
+}
+
+.hero p {
+  margin: 0;
+  max-width: 700px;
+  margin-inline: auto;
+  line-height: 1.7;
+}
+
+.section {
+  background: #ffffff;
+  padding: 1.8rem;
+  border-radius: 1.4rem;
+  margin: 1rem 0;
+  box-shadow: 0 20px 45px rgba(15, 23, 42, 0.08);
+}
+
+.section h2 {
+  margin-top: 0;
+}
+
+.grid {
+  display: grid;
+  gap: 1rem;
+}
+
+.grid-3 {
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+}
+
+.card {
+  border: 1px solid #e2e8f0;
+  border-radius: 1.25rem;
+  padding: 1.25rem;
+  background: #f8fafc;
+}
+
+.card h3 {
+  margin-top: 0;
+}
+
+footer {
+  text-align: center;
+  padding: 1rem 0 2rem;
+  color: #475569;
+}
+
+@media (max-width: 700px) {
+  nav {
+    justify-content: flex-start;
+    overflow-x: auto;
+    padding-left: 1rem;
+  }
+
+  .hero {
+    padding: 2rem 1rem;
+  }
+}
